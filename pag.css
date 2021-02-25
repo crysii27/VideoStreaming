@@ -22,10 +22,21 @@ body{
 
 /* header */
 
-.title h1{
+
+.title h1 {
     padding: 20px 0;
     text-align: center;
     font-size: 2rem;
+    text-transform: uppercase;
+    background-color: #252325;
+    width: 90%;
+    max-width: 1500px;
+    margin: 1.6em auto;
+    color: white;
+} 
+
+.header h2 {
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -74,14 +85,28 @@ body{
     color: white;
 }
 
-.content .article h1,
+.content .article .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.content .article h2{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(151, 148, 148);
+}
+
 .content .article p{
     padding: 10px;
+    text-align: center;
 }
 
 .container .sidebar img {
     width: 100%;
     margin-top: 5px;
+}
+.container .sidebar p{
+    text-align: center;
 }
 
 .container > .sidebar {
@@ -89,7 +114,7 @@ body{
     background-color: rgb(31, 30, 30);
     color: white;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
@@ -98,20 +123,69 @@ body{
     grid-column: span 5;
     background-color: rgb(31, 30, 30);
     color: white;
-    height: 180px;
+    height: 280px;
+    margin-top: 5px;
     display: block;
     justify-content: center;
     align-items: center;
     transition: all 0.5s ease;
 }
 
+
+.related-post img.foto1{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: -150px;
+    bottom: -90px;
+}
+
+.related-post img.foto2{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: -132px;
+    bottom: -90px;
+}
+.related-post img.foto3{
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: -90px;
+    bottom: -90px;
+}
+.related-post img.foto4{
+    width: 160px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    left: -190px;
+    bottom: -90px;
+}
+
+.related-post h2{
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+}
 .container > .related-post:hover{
     cursor: pointer;
-    color: black;
-    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    background-color: rgb(83, 80, 80);
     padding: 5px;
 }
 
+.related-post > .info1:hover{
+    color: black;
+}
+.related-post >.uno{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
 .related-post > .info1 {
 
     display: flex;
@@ -120,7 +194,7 @@ body{
     flex-direction: row;
     list-style: none;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 .footer a{
